@@ -1,0 +1,29 @@
+{
+	"name": "netflix",
+	"version": "1.0.0",
+	"description": "React-Netflix",
+	"main": "server.js",
+	"scripts": {
+		"server": "nodemon api/server.js",
+		"client": "npm start --prefix client",
+		"start": "react-scripts start",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"data:import": "node api/seederScript.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"dependencies": {
+		"crypto-js": "^4.1.1",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-validator": "^6.14.0",
+		"gravatar": "^1.8.2",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.12"
+	},
+	"devDependencies": {
+		"concurrently": "^6.5.1",
+		"nodemon": "^2.0.15"
+	}
+}
